@@ -1,4 +1,3 @@
-// CalculateComission.js has errors that need to be fixed 
 function calculateCommissionFunction(lockQty, stockQty, barrelQty) {
     // Product costs
     const lockCost = 45;
@@ -14,8 +13,8 @@ function calculateCommissionFunction(lockQty, stockQty, barrelQty) {
     const totalSales = lockQty * lockCost + stockQty * stockCost + barrelQty * barrelCost;
 
     // Check if sales exceed any limits
-    if (lockQty > maxLocks && stockQty > maxStocks && barrelQty > maxBarrels) {
-        return "Sales quantities exceed maximum limits.";
+    if (lockQty > maxLocks || stockQty > maxStocks || barrelQty > maxBarrels) {
+        throw new Error("Sales quantities exceed maximum limits.");
     }
 
     // Commission rates
@@ -29,11 +28,9 @@ function calculateCommissionFunction(lockQty, stockQty, barrelQty) {
     }
 
     // Calculate commission
-    let commission = totalSales * commissionRate;
+    const commission = totalSales * commissionRate;
 
-    // Subtract commission for 1 lock
-    commission -= lockCost * commissionRate;
-
-    return [totalSales,commission];
+    return [totalSales, commission];
 }
+
 module.exports = calculateCommissionFunction;

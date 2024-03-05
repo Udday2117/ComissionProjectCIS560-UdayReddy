@@ -1,3 +1,3 @@
 const commission = require('./CalculateComission');
-const result = commission(70, 80, 90);
+const result = commission(15, 15, 15);
 console.log(result);
