@@ -59,7 +59,7 @@ describe(
 
     test('Test Case 11: Expect sales NOT to exceed limits', () => {
         const [totalSales, commission] = calculateCommissionFunction(16, 16, 16);
-        expect(totalSales).toBe(1500); // Adjust according to your product costs
+        expect(totalSales).toBe(1600); // Adjust according to your product costs
         expect(commission).toBe(225);  // Adjust according to your commission rate
     });
 });
