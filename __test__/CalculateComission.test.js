@@ -37,9 +37,7 @@ describe(
         expect(() => calculateCommissionFunction(1, 1, 91)).toThrow("Sales quantities exceed the maximum limits.");
     });
 
-
-
-    test('Test Case 8: Expect sales NOT to exceed limits', () => {
+     test('Test Case 8: Expect sales NOT to exceed limits', () => {
         const [totalSales, commission] = calculateCommissionFunction(1, 1, 1);
         expect(totalSales).toBe(100); // Adjust according to your product costs
         expect(commission).toBe(10);  // Adjust according to your commission rate
