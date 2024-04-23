@@ -26,11 +26,11 @@ describe(
     });
 
     test('Test Case 5: Expect sales to exceed limits', () => {
-        expect(() => calculateCommissionFunction(1, 81, 1)).toThrow("Sales quantities exceed maximum limits.");
+        expect(() => calculateCommissionFunction(1, 81, 1)).toThrow("Sales quantities exceed the maximum limits.");
     });
 
-    test('Test Case 6: Expect sales to exceed limits', () => {
-        expect(() => calculateCommissionFunction(1, 81, 91)).toThrow("Sales quantities exceed maximum limits.");
+    test('Test Case 6: Expect sales to exceed the limits', () => {
+        expect(() => calculateCommissionFunction(1, 81, 91)).toThrow("Sales quantities exceed the maximum limits.");
     });
 
     test('Test Case 7: Expect sales to exceed limits', () => {
