@@ -14,7 +14,7 @@ function calculateCommissionFunction(lockQty, stockQty, barrelQty) {
 
     // Check if sales exceed any limits
     if (lockQty > maxLocks || stockQty > maxStocks || barrelQty > maxBarrels) {
-        throw new Error("Sales quantities exceed maximum limits.");
+        throw new Error("Sales quantities exceed the maximum limits.");
     }
 
     // Commission rates
