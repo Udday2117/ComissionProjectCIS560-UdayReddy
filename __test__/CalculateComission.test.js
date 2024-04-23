@@ -14,15 +14,15 @@ describe(
 
 
     test('Test Case 2: Expect sales to exceed limits', () => {
-        expect(() => calculateCommissionFunction(71, 81, 91)).toThrow("Sales quantities exceed maximum limits.");
+        expect(() => calculateCommissionFunction(71, 81, 91)).toThrow("Sales quantities exceed the maximum limits.");
     });
 
     test('Test Case 3: Expect sales to exceed limits', () => {
-        expect(() => calculateCommissionFunction(71, 1, 1)).toThrow("Sales quantities exceed maximum limits.");
+        expect(() => calculateCommissionFunction(71, 1, 1)).toThrow("Sales quantities exceed the maximum limits.");
     });
 
     test('Test Case 4: Expect sales to exceed limits', () => {
-        expect(() => calculateCommissionFunction(71, 81, 1)).toThrow("Sales quantities exceed maximum limits.");
+        expect(() => calculateCommissionFunction(71, 81, 1)).toThrow("Sales quantities exceed the maximum limits.");
     });
 
     test('Test Case 5: Expect sales to exceed limits', () => {
@@ -34,7 +34,7 @@ describe(
     });
 
     test('Test Case 7: Expect sales to exceed limits', () => {
-        expect(() => calculateCommissionFunction(1, 1, 91)).toThrow("Sales quantities exceed maximum limits.");
+        expect(() => calculateCommissionFunction(1, 1, 91)).toThrow("Sales quantities exceed the maximum limits.");
     });
 
 
