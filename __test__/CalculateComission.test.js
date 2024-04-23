@@ -55,4 +55,10 @@ describe(
         expect(commission).toBe(225);  // Adjust according to your commission rate
     });
 
+    test('Test Case 11: Expect sales NOT to exceed limits', () => {
+        const [totalSales, commission] = calculateCommissionFunction(16, 16, 16);
+        expect(totalSales).toBe(1600); // Adjust according to your product costs
+        expect(commission).toBe(240);  // Adjust according to your commission rate
+    });
+
 });
